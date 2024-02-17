@@ -5,6 +5,7 @@ import { NextResponse } from "next/server";
 import prismadb from "@/lib/db";
 import { stripe } from "@/lib/stripe";
 
+// Webhook handler for Stripe
 export async function POST(req: Request) {
     const body = await req.text();
     const signature = headers().get("Stripe-Signature") as string;

@@ -7,6 +7,7 @@ import { absoluteUrl } from "@/lib/utils";
 
 const settingsUrl = absoluteUrl("/settings");
 
+// API endpoint for Stripe
 export async function GET() {
     try {
         const { userId } = auth();
