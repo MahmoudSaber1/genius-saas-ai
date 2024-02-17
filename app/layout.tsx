@@ -11,12 +11,14 @@ export const metadata: Metadata = {
 import { ClerkProvider } from "@clerk/nextjs";
 import { ToasterProvider } from "@/providers/toaster-provider";
 import { ModalProvider } from "@/providers/modal-provider";
+import { CrispProvider } from "@/providers/crisp-provider";
 import "./globals.css";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <ClerkProvider>
             <html lang="en">
+                <CrispProvider />
                 <body className={inter.className}>
                     <ToasterProvider />
                     <ModalProvider />
