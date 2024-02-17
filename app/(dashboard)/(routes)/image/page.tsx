@@ -154,7 +154,7 @@ const ImagePage = () => {
                     </form>
                 </Form>
                 {isLoading && (
-                    <div className="p-20">
+                    <div className="p-8 rounded-lg w-full flex items-center justify-center bg-muted">
                         <Loader />
                     </div>
                 )}
